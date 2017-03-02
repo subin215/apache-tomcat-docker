@@ -1,7 +1,7 @@
 # apache-tomcat-docker
 ---
 ## Description
-Simple template for docker-compose to build images for an application deployed on a tomcat server, where http is proxying requests to tomcat.
+Simple template for docker-compose to build images for an application deployed on a tomcat server where http is proxying requests to tomcat. Only port 80 on the apache container is exposed to the host.
 
 ---
 
