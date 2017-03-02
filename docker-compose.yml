@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    expose:
+      - "8009"
+    build: tomcat/.
+    container_name: "web"
+  httpd:
+    volumes:
+      - ./logs:/var/log/apache2
+    ports:
+      - "70:80"
+    build: httpd/.
+    container_name: "httpd"
